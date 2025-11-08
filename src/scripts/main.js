@@ -383,6 +383,7 @@ for (let worker of people) {
     age: worker.died - worker.born,
     century: Math.ceil(worker.died / 100),
   };
+
   const str = document.createElement('tr'); // cтрока таблицы
   for (let dashi of Object.values(obj)) {
     const row = document.createElement('td'); // ячейки
